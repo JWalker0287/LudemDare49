@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: -2254759488864307231}
   - component: {fileID: -5308237183269912446}
   - component: {fileID: -1851830426692298170}
+  - component: {fileID: 24732237894158761}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -167,6 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4276aed94b58442b3cff435fd44976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xspeed: 5
+  jumpHeight: 5
 --- !u!50 &-1851830426692298170
 Rigidbody2D:
   serializedVersion: 4
@@ -187,4 +190,35 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &24732237894158761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3335941374477515618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31839d8b31cce4d798caa4e0d9e650d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreTags: []
+  damageSoundName: 
+  deathSoundName: 
+  resurectionSoundName: 
+  destructionSoundName: 
+  damageParticlesName: 
+  deathParticlesName: 
+  destructionParticlesName: 
+  destructionSpawnName: 
+  anim: {fileID: 0}
+  damageTriggerName: 
+  deathTriggerName: 
+  resurectionTriggerName: 
+  audioSpatialBlend: 0
+  recoveryTime: 3
+  spawnInvincible: 0
+  healOnEnable: 0
+  _maxHealth: 3
+  destructionHealth: -1
