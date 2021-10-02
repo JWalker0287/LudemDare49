@@ -15,29 +15,35 @@ public class CharacterMotor : MonoBehaviour
         private set { _onGround = value; }
     }
 
+    Animator anim;
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        GroundCheck();
-
+        //GroundCheck();
         body.velocity = new Vector2(inputX * xspeed, body.velocity.y);
+        anim.SetFloat("XSpeed", Mathf.Abs(body.velocity.x));
+        anim.SetFloat("YSpeed", body.velocity.y);
     }
 
     public void Move(float x)
     {
         inputX = x;
+        transform.right = new Vector2(inputX, 0).normalized;
     }
 
     public void Jump()
     {
-        if (!onGround) return;
+        //if (!onGround) return;
 
         float jumpVelocity = Mathf.Sqrt(-2 * Physics2D.gravity.y * body.gravityScale * jumpHeight);
         body.velocity = new Vector2(body.velocity.x, jumpVelocity);
+        anim.SetTrigger("Jump");
     }
 
     void GroundCheck()
