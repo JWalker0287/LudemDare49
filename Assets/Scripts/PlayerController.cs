@@ -6,9 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     CharacterMotor motor;
     ProjectileLauncher gun;
+    public static PlayerController player;
 
     void Start()
     {
+        if (player == null) player = GetComponent<PlayerController>();
         gun = GetComponentInChildren<ProjectileLauncher>();
         motor = GetComponent<CharacterMotor>();
     }

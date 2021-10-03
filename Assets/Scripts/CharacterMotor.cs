@@ -29,12 +29,12 @@ public class CharacterMotor : MonoBehaviour
         body.velocity = new Vector2(inputX * xspeed, body.velocity.y);
         anim.SetFloat("XSpeed", Mathf.Abs(body.velocity.x));
         anim.SetFloat("YSpeed", body.velocity.y);
+        if (body.velocity.x < 0 || body.velocity.x > 0) transform.right = new Vector2(inputX, 0);
     }
 
     public void Move(float x)
     {
         inputX = x;
-        transform.right = new Vector2(inputX, 0).normalized;
     }
 
     public void Jump()
