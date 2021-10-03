@@ -123,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: {x: 0, y: 0, z: 0}
   outwardForce: 0
-  damage: 1
+  damage: 3
   multiplier: 1
   disableOnCollision: 0
   affectAncestor: 0
