@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -1185019394295298291
     second: RayGun
+  - first:
+      213: 2006588274417896851
+    second: RayGun_Bullet
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -122,6 +125,27 @@ TextureImporter:
       bones: []
       spriteID: d07841fa327fd8fe0800000000000000
       internalID: -1185019394295298291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RayGun_Bullet
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 365
+        width: 231
+        height: 132
+      alignment: 9
+      pivot: {x: 0.690819, y: 0.49289495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d842b7765d8db10800000000000000
+      internalID: 2006588274417896851
       vertices: []
       indices: 
       edges: []
