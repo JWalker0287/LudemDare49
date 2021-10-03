@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileName: RayGunBullet
-  launchDelay: 1.5
+  launchDelay: 0.1
   showProjectileOnReady: 0
   spread: 0
   accuracy: 1
@@ -310,7 +310,7 @@ MonoBehaviour:
   ammoRecoveryRate: 0
   maxAmmo: -1
   animTriggerName: Shoot
-  anim: {fileID: 0}
+  anim: {fileID: 1944252975292603241}
 --- !u!1 &2238577802882633677
 GameObject:
   m_ObjectHideFlags: 0

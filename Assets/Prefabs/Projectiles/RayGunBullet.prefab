@@ -92,7 +92,7 @@ MonoBehaviour:
   dieOffScreen: 0
   dieOnHit: 1
   limitDistance: 0
-  maxDistance: 20
+  maxDistance: 10
   pursuitDamping: 0.1
   gunVelocityDamping: 0.1
   particles: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   audioSpatialBlend: 0
   screenSpacePan: 0
   scaleImpactVolume: 0
-  shakeCamera: 1
+  shakeCamera: 0
   onFireParticleSystemName: 
   onFinishParticleSystemName: 
   onHitParticleSystemName: 

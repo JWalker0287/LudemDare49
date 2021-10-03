@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: 2006588274417896851
     second: RayGun_Bullet
+  - first:
+      213: -1904726760545313753
+    second: MegaLaser
+  - first:
+      213: -2115802580912564581
+    second: LaserBeam
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -146,6 +152,48 @@ TextureImporter:
       bones: []
       spriteID: 39d842b7765d8db10800000000000000
       internalID: 2006588274417896851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaLaser
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 150
+        width: 227
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c148b5a1d0195e0800000000000000
+      internalID: -1904726760545313753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LaserBeam
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 159
+        width: 180
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 54, y: 32, z: 55, w: 32}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b961add33c823a2e0800000000000000
+      internalID: -2115802580912564581
       vertices: []
       indices: 
       edges: []
