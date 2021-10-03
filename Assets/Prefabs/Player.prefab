@@ -672,7 +672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xspeed: 5
-  jumpHeight: 5
+  jumpHeight: 3
   Environment:
     serializedVersion: 2
     m_Bits: 64
@@ -1553,7 +1553,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1169525067
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 7
   m_Sprite: {fileID: -6901328544471161896, guid: ca62e3d2b20accb488cdd4d50d08504c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
