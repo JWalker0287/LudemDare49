@@ -22,21 +22,26 @@ public class DoorController : MonoBehaviour
         {
             if (Input.GetButtonDown("Interact"))
             {
-                Debug.Log("this works");
+                SceneLoader.DoorTravel(destLevelName, destID);
             }
         }
     }
 
-    void OnTriggerEnter(Collider c)
+    void OnTriggerEnter2D (Collider2D c)
     {   
+        PlayerController p = c.gameObject.GetComponent<PlayerController>();
+        if (p == null) return;
 
         prompting = true;
         anim.SetBool("Opened", true);
 
     }
 
-    void OnTriggerExit(Collider c)
+    void OnTriggerExit2D (Collider2D c)
     {
+        PlayerController p = c.gameObject.GetComponent<PlayerController>();
+        if (p == null) return;
+
         prompting = false;
         anim.SetBool("Opened", false);
     }

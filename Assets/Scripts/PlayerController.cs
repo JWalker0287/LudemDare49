@@ -10,7 +10,15 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        if (player == null) player = GetComponent<PlayerController>();
+        if (player == null) 
+        {
+            player = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else 
+        {
+            Destroy(gameObject);
+        }
         gun = GetComponentInChildren<ProjectileLauncher>();
         motor = GetComponent<CharacterMotor>();
     }

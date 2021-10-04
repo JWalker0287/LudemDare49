@@ -9,7 +9,15 @@ public class SceneLoader : MonoBehaviour
 
     void Start()
     {
-        sceneLoader = GetComponent<SceneLoader>();
+        if (sceneLoader == null) 
+        {
+            sceneLoader = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else 
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void ReloadCurrentScene()
@@ -18,13 +26,35 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(currentScene);
     }
 
-    public void LoadLevel(string sceneName)
+    public static void LoadLevel(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
 
-    public void DoorTravel(string lvlName, int dID)
+    public static void DoorTravel(string lvlName, int dID)
     {
-        LoadLevel(lvlName);
+        sceneLoader.StartCoroutine(sceneLoader.DoorTravelCoroutine(lvlName, dID));
+    }
+
+    public IEnumerator DoorTravelCoroutine(string lvlName, int dID)
+    {
+        if (lvlName == SceneManager.GetActiveScene().name)
+        {
+            SceneManager.LoadScene(lvlName);
+        }
+        else 
+        {
+            yield return SceneManager.LoadSceneAsync(lvlName);
+        }
+
+        DoorController[] doors = GameObject.FindObjectsOfType<DoorController>();
+        foreach (DoorController door in doors)
+        {
+            if (door.doorID == dID)
+            {
+                PlayerController.player.transform.position = door.transform.position;
+                break;
+            }
+        }
     }
 }
