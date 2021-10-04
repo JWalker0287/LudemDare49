@@ -6648,7 +6648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6570942501763923790, guid: f478b7e906ff75c418aec2bcf82dcfdc, type: 3}
       propertyPath: destLevelName
-      value: Level2
+      value: StorageRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f478b7e906ff75c418aec2bcf82dcfdc, type: 3}
@@ -10943,7 +10943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6570942501763923790, guid: f478b7e906ff75c418aec2bcf82dcfdc, type: 3}
       propertyPath: destLevelName
-      value: Level2
+      value: Level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f478b7e906ff75c418aec2bcf82dcfdc, type: 3}
@@ -11040,10 +11040,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1851830426692298170, guid: fc505ba360d945c47b5f729521261312, type: 3}
-      propertyPath: m_Constraints
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 3335941374477515618, guid: fc505ba360d945c47b5f729521261312, type: 3}
       propertyPath: m_Name
       value: Player

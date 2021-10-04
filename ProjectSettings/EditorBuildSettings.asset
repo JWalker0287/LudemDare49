@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: 7fdea5cc759f53f4784f9778622f894c
+  - enabled: 1
+    path: Assets/Scenes/StorageRoom.unity
+    guid: 0c336abc0ad6ee94293009362d37281a
   m_configObjects: {}
