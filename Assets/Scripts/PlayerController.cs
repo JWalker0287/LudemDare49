@@ -33,5 +33,10 @@ public class PlayerController : MonoBehaviour
         {
             gun.Shoot(gun.transform.right);
         }
+        if (Input.GetButtonDown("Cancel"))
+        {
+            SceneLoader.LoadLevel("MainMenu");
+            Destroy(gameObject);
+        }
     }
 }

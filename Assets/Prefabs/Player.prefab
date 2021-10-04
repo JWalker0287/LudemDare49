@@ -687,7 +687,7 @@ MonoBehaviour:
   recoveryTime: 3
   spawnInvincible: 0
   healOnEnable: 0
-  _maxHealth: 100
+  _maxHealth: 10
   destructionHealth: 0
 --- !u!61 &6577476058631265495
 BoxCollider2D:
