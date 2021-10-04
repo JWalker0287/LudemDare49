@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3798910777035109069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3798910777035109064}
+  - component: {fileID: 3798910777035109071}
+  - component: {fileID: 3798910777035109070}
+  - component: {fileID: 3798910777035109065}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3798910777035109064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798910777035109069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.57432944, y: 0.17408882, z: -0.0459372}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3798910777035109071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798910777035109069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4799d757408aa4fae8aaeb0348a48b9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reparentObjects: 1
+  prefabs:
+  - {fileID: 827246677229666539, guid: fe8969065d935dc43abf80530fcc7175, type: 3}
+  poolStartSize: 10
+--- !u!114 &3798910777035109070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798910777035109069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5edc519ec214b54a796394844461cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 0}
+  autoStartMusic: 1
+  dontDestroyOnLoad: 1
+  clips: []
+  mixer: {fileID: 0}
+  mixerGroupPaths: []
+  musicGroupPath: Master/Music
+  sfxGroupPath: Master/SFX
+  sfxSourcesCount: 5
+  minPlayInterval: 0.01
+--- !u!114 &3798910777035109065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798910777035109069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267b53366fd5c634c9ea89989befd4f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
