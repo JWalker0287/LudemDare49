@@ -4,15 +4,41 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int doorID = 0;
+    public int destID = 0;
+    public string destLevelName = "";
+    public bool prompting = false;
+
+    Animator anim;
+    
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (prompting)
+        {
+            if (Input.GetButtonDown("Interact"))
+            {
+                Debug.Log("this works");
+            }
+        }
     }
+
+    void OnTriggerEnter(Collider c)
+    {   
+
+        prompting = true;
+        anim.SetBool("Opened", true);
+
+    }
+
+    void OnTriggerExit(Collider c)
+    {
+        prompting = false;
+        anim.SetBool("Opened", false);
+    }
+
 }

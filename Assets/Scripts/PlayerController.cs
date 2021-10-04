@@ -20,10 +20,7 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
 
         motor.Move(x);
-        if (Input.GetButtonDown("Jump"))
-        {
-            motor.Jump();
-        }
+
         if (Input.GetButtonDown("Fire1"))
         {
             gun.Shoot(gun.transform.right);

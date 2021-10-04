@@ -9,11 +9,6 @@ public class CharacterMotor : MonoBehaviour
     public float jumpHeight = 5;
     public LayerMask Environment;
     float inputX;
-    bool _onGround;
-    public bool onGround {
-        get { return _onGround; }
-        private set { _onGround = value; }
-    }
 
     Animator anim;
 
@@ -25,7 +20,6 @@ public class CharacterMotor : MonoBehaviour
 
     void Update()
     {
-        //GroundCheck();
         body.velocity = new Vector2(inputX * xspeed, body.velocity.y);
         anim.SetFloat("XSpeed", Mathf.Abs(body.velocity.x));
         anim.SetFloat("YSpeed", body.velocity.y);
@@ -37,22 +31,4 @@ public class CharacterMotor : MonoBehaviour
         inputX = x;
     }
 
-    public void Jump()
-    {
-        //if (!onGround) return;
-
-        float jumpVelocity = Mathf.Sqrt(-2 * Physics2D.gravity.y * body.gravityScale * jumpHeight);
-        body.velocity = new Vector2(body.velocity.x, jumpVelocity);
-        anim.SetTrigger("Jump");
-    }
-
-    void GroundCheck()
-    {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.05f, Environment);
-        onGround = (colliders.Length > 0);
-        colliders = Physics2D.OverlapCircleAll(transform.position+Vector3.right*0.25f, 0.05f, Environment);
-        onGround = onGround | (colliders.Length > 0);
-        colliders = Physics2D.OverlapCircleAll(transform.position+Vector3.left*0.25f, 0.05f, Environment);
-        onGround = onGround | (colliders.Length > 0);
-    }
 }

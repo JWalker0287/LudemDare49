@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: d06f63e90e5f95540bd9b773b799de68
+guid: 22c99a9bd6574984a8e3173fc80cc60e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -7062462546573273203
-    second: DoorPanel_1
-  - first:
-      213: -4344479936621058469
-    second: DoorPanel_2
-  - first:
-      213: -5154506985050438049
-    second: DoorBack
-  - first:
-      213: -1396174364228545232
-    second: DoorFrame
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,13 +41,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 512
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 10, y: 247, z: 216, w: 213}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,91 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: DoorPanel_1
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 535
-        width: 194
-        height: 478
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d87dfff7bb71dfd90800000000000000
-      internalID: -7062462546573273203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorPanel_2
-      rect:
-        serializedVersion: 2
-        x: 583
-        y: 538
-        width: 187
-        height: 477
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b56e3e3048e45b3c0800000000000000
-      internalID: -4344479936621058469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorBack
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 0
-        width: 326
-        height: 483
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f568cc3f4338778b0800000000000000
-      internalID: -5154506985050438049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DoorFrame
-      rect:
-        serializedVersion: 2
-        x: 523
-        y: 0
-        width: 378
-        height: 512
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03596af10dacf9ce0800000000000000
-      internalID: -1396174364228545232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

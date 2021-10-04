@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 827246677229666549}
   - component: {fileID: 827246677229666538}
   - component: {fileID: 4392434013699418315}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RayGunBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827246677897495523}
   - component: {fileID: 827246677897495522}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RayGun_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

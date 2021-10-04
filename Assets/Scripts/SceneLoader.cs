@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    
+    public static SceneLoader sceneLoader;
 
     void Start()
     {
-        
+        sceneLoader = GetComponent<SceneLoader>();
     }
 
     public void ReloadCurrentScene()
@@ -23,4 +23,8 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void DoorTravel(string lvlName, int dID)
+    {
+        LoadLevel(lvlName);
+    }
 }
